@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<style>
+form {
+    margin: auto;
+    width: 35%;
+}
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+</style>
+<head>
+    <title>Evidence Retrieval</title>
+</head>
+<form action="{{ url_for('index') }}" method="POST">
+    <fieldset>
+        <legend>Enter Claim:</legend>
+        <textarea name="claim" rows="10" cols="80" required></textarea>
+        <br>
+        <br>
+        <input type="submit">
+    </fieldset>
+</form>
+<br>
+<div class="result" align="center">
+    {% if result %}
+       <p style="font-size:30px">Output:</p>
+        {% for para in result %}
+            <p>{{para}}</p>
+        {% endfor %}
+    {% endif %}
+<!--</div>-->
+</html>

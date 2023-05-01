@@ -1,0 +1,1 @@
+global_val_accuracy = 0.
