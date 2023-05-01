@@ -1,1 +1,2 @@
-# claim_detection_evidence_retrieval
+# Claim Detection and Evidence Retrieval using Deep Learning
+# Edutech Final Project
